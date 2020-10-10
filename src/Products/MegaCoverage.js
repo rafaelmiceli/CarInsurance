@@ -6,9 +6,7 @@ class MegaCoverage extends Product {
         super(name, sellIn, price)
     }
 
-    update() {
-        
-    }
+    update() {}
 }
 
 module.exports = MegaCoverage;

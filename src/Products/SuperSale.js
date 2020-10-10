@@ -7,7 +7,9 @@ class SuperSale extends Product {
     }
 
     update() {
-        
+        this.sellIn -= 1;
+        this.price -= 2;
+        this.price = (this.price < 0) ? 0 : this.price;
     }
 }
 
