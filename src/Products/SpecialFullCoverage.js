@@ -2,12 +2,12 @@ const Product = require('../Products/Product');
 
 class SpecialFullCoverage extends Product {
 
-    constructor(name, sellIn, prize) {
-        super(name, sellIn, prize)
+    constructor(name, sellIn, price) {
+        super(name, sellIn, price)
     }
 
     update() {
-        console.log('SpecialFullCoverage update');
+        
     }
 }
 
