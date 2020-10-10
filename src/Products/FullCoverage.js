@@ -7,7 +7,7 @@ class FullCoverage extends Product {
     }
 
     update() {
-        console.log(this.name);
+        console.log();
     }
 }
 
