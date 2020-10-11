@@ -1,4 +1,4 @@
-# ComparaOnline Test Requirements Specification
+# CarInsurance
 
 Hi, welcome to the Software Engineer CO Test. In this test we expect to see your approach to refactor a legacy code into a testeable, object oriented solution.
 

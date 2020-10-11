@@ -20,4 +20,12 @@ describe("Super Sale", function() {
     expect(product.price).equal(0);
   });
 
+  it("should Super Sale", function () {
+    const product = ProductFactory.create({ name: 'Super Sale', sellIn: -1, price: 1 });
+    product.update();
+    expect(product.name).equal('Super Sale');
+    expect(product.sellIn).equal(-2);
+    expect(product.price).equal(0);
+  });
+
 });
