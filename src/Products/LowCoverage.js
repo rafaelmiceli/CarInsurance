@@ -2,8 +2,8 @@ const Product = require('../Products/Product');
 
 class LowCoverage extends Product {
 
-    constructor(props) {
-        super(props)
+    constructor(name, sellIn, price) {
+        super(name, sellIn, price)
     }
 
     update() {

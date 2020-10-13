@@ -1,8 +1,8 @@
 class Product {
-    constructor(props) {
-        this.name = props.name;
-        this.sellIn = props.sellIn;
-        this.price = props.price;
+    constructor(name, sellIn, price) {
+        this.name = name;
+        this.sellIn = sellIn;
+        this.price = price;
     }
 }
 
