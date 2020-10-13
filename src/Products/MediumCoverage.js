@@ -7,10 +7,10 @@ class MediumCoverage extends Product {
     }
 
     update() {
-        this.sellIn -= 1;
-        let qty = (this.sellIn > 0)? 1 : 2; 
-        this.price -= qty;
-        this.price = (this.price < 0)? 0 : this.price;
+        this.decrementSellIn(1);
+        let qty = (this.sellIn > 0)? -1 : -2; 
+        this.incrementPrice(qty);
+        this.checkMinPrice();
     }
 }
 
