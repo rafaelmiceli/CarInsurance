@@ -7,9 +7,9 @@ class FullCoverage extends Product {
     }
 
     update() {
-        this.decrementSellIn(1);
+        this.alterSellIn(-1);
         let qty = (this.sellIn > 0)? 1 : 2;
-        this.incrementPrice(qty);
+        this.alterPrice(qty);
         this.checkMaxPrice();
     }
 }

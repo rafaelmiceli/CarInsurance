@@ -7,7 +7,7 @@ class MegaCoverage extends Product {
     }
 
     update() {
-        this.decrementSellIn(1);
+        this.alterSellIn(-1);
     }
 }
 

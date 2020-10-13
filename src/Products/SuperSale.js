@@ -7,8 +7,8 @@ class SuperSale extends Product {
     }
 
     update() {
-        this.decrementSellIn(1);
-        this.incrementPrice(-2);
+        this.alterSellIn(-1);
+        this.alterPrice(-2);
         this.checkMinPrice();
     }
 }

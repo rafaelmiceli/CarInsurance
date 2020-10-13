@@ -7,16 +7,16 @@ class SpecialFullCoverage extends Product {
     }
 
     update() {
-        this.decrementSellIn(1);
+        this.alterSellIn(-1);
 
         if (this.sellIn <= 0) {
             this.price = 0;
         } else if (this.sellIn < 5){
-            this.incrementPrice(3);
+            this.alterPrice(3);
         } else if (this.sellIn < 10) {
-            this.incrementPrice(2);
+            this.alterPrice(2);
         } else {
-            this.incrementPrice(1);
+            this.alterPrice(1);
         }
 
         this.checkMaxPrice();

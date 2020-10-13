@@ -9,11 +9,11 @@ class Product {
         this.minPrice = 0;
     }
 
-    decrementSellIn(qty) {
-        this.sellIn -= qty;
+    alterSellIn(qty) {
+        this.sellIn += qty;
     }
 
-    incrementPrice(qty) {
+    alterPrice(qty) {
         this.price += qty;
     }
     
