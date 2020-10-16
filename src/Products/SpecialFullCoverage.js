@@ -14,12 +14,8 @@ class SpecialFullCoverage extends Product {
     }
 
     calculatePrice(sellInValue) {
-        this.ranges.forEach(range => {
-            if (range.min <= sellInValue && sellInValue <= range.max) {
-                eval(range.action);
-                return;
-            }
-        });
+        const result = this.ranges.filter(range => range.min <= sellInValue && sellInValue <= range.max);
+        eval(result[0].action);
     }
     
     update() {
